@@ -1,0 +1,221 @@
+<!doctype html>
+<html>
+<head>
+<title> Unit 2 </title>
+<link rel="stylesheet" href="common.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<h1> Unit 2</h1>
+<h3>What is DOM</h3>
+<p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects; that way, programming languages can interact with the page.
+A web page is a document that can be either displayed in the browser window or as the HTML source. In both cases, it is the same document but the Document Object Model (DOM) representation allows it to be manipulated. As an object-oriented representation of the web page, it can be modified with a scripting language such as JavaScript.</p>
+<h3>Structure of DOM</h3>
+<p>It is like a tree of forest(more than one tree).The DOM Structure model is used to representation of the document</p>
+<p>Each branch of the tree ends in a node and each node contains object event listener that is trigerd on the occurance of the given elements</p>
+<img src="/Images/DOM.png">
+<h3>Doctype in HTML</h3>
+<p>In HTML, `&lt;!DOCTYPE html&gt;` is a declaration that specifies the version of HTML being used in the document. It's not an HTML tag; instead, it's an instruction to the web browser about how to interpret the document. The `&lt;!DOCTYPE html&gt;` declaration is used for HTML5 documents and is the simplest and most commonly used doctype.
+The purpose of the `&lt;!DOCTYPE html&gt;` declaration is to ensure that the web browser renders the document in standards mode, which helps ensure consistent rendering across different browsers. 
+Before HTML5, there were various doctype declarations for different versions of HTML.</p>
+<h3>Charector Encoding</h3>
+<p>Character encoding is a system that associates each character in a character set with a unique numerical code. It allows computers to represent and manipulate text in various languages and scripts. There are several character encoding standards, each defining a mapping between characters and their corresponding numerical codes.
+    Here are some common character encoding standards:</p>
+<ol>
+    <li><b>ASCII (American Standard Code for Information Interchange):</b> ASCII is one of the oldest and simplest character encoding standards. It uses 7 bits to represent 128 characters, including English letters, digits, punctuation marks, and control characters.</li>
+    <li><b>ISO-8859 (Latin):</b> The ISO-8859 series includes several character encoding standards, each designed for specific languages or regions. For example, ISO-8859-1 covers Western European languages.</li>
+    <li><b>UTF-8 (Unicode Transformation Format 8-bit):</b> UTF-8 is a variable-width character encoding standard that is capable of representing all Unicode characters. It uses 8-bit code units and can encode characters from various languages and scripts, making it the most commonly used character encoding on the web.</li>
+    <li><b>UTF-16 (Unicode Transformation Format 16-bit):</b> UTF-16 is another variable-width character encoding standard for Unicode. It uses 16-bit code units and can represent the entire Unicode character set.</li>
+    <li><b>UTF-32 (Unicode Transformation Format 32-bit):</b> UTF-32 is a fixed-width character encoding standard for Unicode. It uses 32-bit code units for each character and can represent the entire Unicode character set.</li>
+</ol>
+<h3>Deprecated Tags</h3>
+<p>The deprecated tag are those tag which are replaced by some other tags and attribute</p>
+<p>The same attribute is acheived by some other way.They are considerd outdated and may not be supported in modern browser </p>
+<table>
+    <thead>
+    <tr>
+        <th>S No.</th>
+        <th>Tags</th>
+        <th>Description</th>
+        <th>Alternate Tag</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>1.</td>
+        <td>&lt;applet&gt;</td>
+        <td>Specific applet</td>
+        <td>&lt;object&gt;</td>
+    </tr>
+    <tr>
+        <td>2.</td>
+        <td>&lt;basefont&gt;</td>
+        <td>Specify a base font</td>
+        <td>font style sheet</td>
+    </tr>
+    <tr>
+        <td>3.</td>
+        <td>&lt;centre&gt;</td>
+        <td>Use to specify a centre tag</td>
+        <td>text-align:centre;</td>
+    </tr>
+    <tr>
+        <td>4.</td>
+        <td>&lt;dir&gt;</td>
+        <td>Specify director list</td>
+        <td> &lt;ul&gt;</td>
+    </tr>
+    <tr>
+        <td>5.</td>
+        <td>&lt;embed&gt;</td>
+        <td>Embed an application in html document</td>
+        <td>&lt;object&gt;</td>
+    </tr>
+    <tr>
+        <td>6.</td>
+        <td>&lt;font&gt; </td>
+        <td>It is used to specify font text size and color</td>
+        <td>font-family<br/>
+        font-size<br/>
+        font-color
+    </td>
+    </tr>
+    <tr>
+        <td>7.</td>
+        <td>&lt;plaintext&gt;</td>
+        <td>Specify plaintext</td>
+        <td>&lt;pre&gt;</td>
+    </tr>
+    <tr>
+        <td>8.</td>
+        <td>&lt;stag&gt;</td>
+        <td>Specify strike throught text</td>
+        <td>text-declaration</td>
+    </tr>
+</tbody>   
+</table>
+<h3>HTML5 Documents</h3>
+<ol>
+    <li><b>&lt;section&gt;</b><p>HTML section tag devide content into section and sub-section<br/>
+    The section tag is used when requirment for two header,footer and other section of the document.</p>
+    <h4>Syntax:</h4>
+    <p>&lt;section&gt; Content &lt;/section&gt;</p>
+</li>
+
+<li><b>&lt;article&gt;</b><p>The article tag is one of the new section element in html file</p><p>The html &lt;article&gt; is used to represent an article</p><p>The article element represent a component of a page that consist of self containt composition in a document</p>
+<h4>Syntax</h4>
+<p>&lt;article&gt; Content &lt;/article&gt;</p></li>
+
+<li><b>&lt;aside&gt;</b><p>The &lt;aside&gt; is used to describe the main object of the webpage in a shorter way like a highliter</p>
+<h4>Syntax:</h4>
+<p>&lt;aside&gt;Content &lt;/aside&gt;</p></li>
+<li><b>&lt;header&gt;</b><p>The &lt;header&gt; is used to define the header of for document or a section as it contains the information related to the title and heading of the related content.</p>
+<h4>Syntax:</h4>
+<p>&lt;header&gt; Content &lt;/header&gt;</p></li>
+<li><b>&lt;footer&gt;</b><p>The &lt;footer&gt; in html is used to define footer of html document. This section contain the footer information(author information,copyright information).</p>
+    <h4>Syntax:</h4>
+<p>&lt;footer&gt; Content &lt;/footer&gt;</p></li>
+<li><b>&lt;nav&gt;</b><p>The &lt;nav&gt; is used for declaration the navigation section in html.Website typically have section dedicated to navigational link.</p>
+<h4>Syntax:</h4>
+<p>&lt;nav&gt; Content &lt;/nav&gt;</p></li>
+<li><b>&lt;dialog&gt;</b><p>The &lt;dialog&gt; is to specify the dialog box or window.the tag is used to creat a popup dialog and model on a webpage.</p>
+    <h4>Syntax:</h4>
+    <p>&lt;dialog open&gt; Content &lt;/dialog&gt;</p>
+</li>
+<li><b>&lt;figure&gt;</b><p>The &lt;figure&gt; in HTML5 is used to add self contained content like illustrations,diagrams,photo or codes it is related to main flow, but can be used at any postion of a document and if remove it then it should not affect the flow of the document.
+    <h4>Syntax:</h4>
+    <p>&lt;figure&gt; Image content &lt;/figure&gt;</p>
+</p></li>
+</ol>
+<h3>Script Tag &lt;script&gt;</h3>
+<p>The &lt;script&gt; in html used to define the client side script.</p>
+<p>The script tag contain the scripting statement.It point to an external script file.</p>
+<p>The JavaScript is mainly used in form validation,dynamic change of content,image manipulation,e.t.c</p>
+<h4>Syntax:</h4>
+<p>&lt;script&gt; script flie &lt;/script&gt;</p>
+<h5>Attributes</h5>
+<p>Many attribute associated with script tag</p>
+<ol>
+    <li><b>Charset:- </b>It is used to specify the url of an extrenal script file.</li>
+    <li><b>defer:- </b>It is used to specify that the script is exicuted when the page has finished.</li>
+    <li><b>src:- </b>It is used to specify the url of an external script file.</li>
+    <li><b>type:- </b>It is used to specify the media type of a script</li>
+</ol>
+<h3>Link Tag &lt;link&gt;</h3>
+<p>Link tag in html is used to define a link between a document and external resource.</p>
+<p>The link tag is mainly used to link to external stylesheets.</p>
+<p>This element can appear multiple times but it goes in the head section</p>
+<p>The link element is empty it contain attributes only</p>
+<p>The value in link element denotes how the items being linked to related document.</p>
+<h4>Syntax:</h4>
+<p>&lt;head&gt;</p>
+<p>&lt;link type="text/css" rel="stylesheet" href="style.css"&gt;</p>
+<p>&lt;/head&gt;</p>
+
+<h3>Web forms in details</h3>
+<p>In html form is used to collect user input.The user input is more often send to a server for processing</p>
+<p>Example:- Name <input type="text"><button class="submit">Submit</button> </p>
+<h3>The form elements</h3>
+<p>The html form elements are used to create an html form for user input</p>
+<h4>Syntax:</h4><br/>
+<p>&lt;form&gt; content &lt;/form&gt;</p>
+<br/>
+<p>The form element contains diffrent type of input element,checkbox elements,radio,button,submit button, etc.</p>
+<h3>HTML Form Elements</h3>
+<p>The html form element can conatin one or more of of the following form elements &lt;input&gt;,&lt;label&gt;,&lt;select&gt;,&lt;textarea&gt;,&lt;button&gt;,&lt;fieldset&gt;,&lt;legend&gt;,&lt;datalyst&gt;,&lt;output&gt;,&lt;option&gt;,&lt;optgroup&gt; </p>
+<ol>
+    <li><b>The &lt;input&gt; Element</b><br/>
+        <p>The input element can be displayed in several way, Depending on the type attribute</p>
+        <h4>Syntax:</h4>
+        <p>&lt;label for="fname"&gt;First Name &lt;/label&gt;</p>
+        <p>&lt;input type="text" id="fname" name="fname"&gt;</p>
+    <b>Output:</b><br/>
+    <label for="fname">First Name </label>
+    <input type="text" id="fname" name="fname"></li>
+        <li><b>The &lt;label&gt; Element</b> <br/>
+            <p>The label element define a label for several form elements</p>
+            <p>The label elements is useful for screen reader user because the screen reader will read out ;oud the label when the user focus on the input field .</p>
+            <p>The label element also helps user who have difficult clicking on very small region</p>
+            <p><b>Example:-</b>Such as radio button </p></li>
+            <li><b>The The &lt;option&gt; Element</b><br/>
+            <p>The select element define a dropdown list</p>
+        <h4>Syntax:</h4>
+         &lt;label for="car"&gt;Choose a car The &lt;/label&gt;<br/>
+         &lt;section id="car" name="car"&gt;<br/>
+         &lt;option value="volvo"&gt; Volvo  &lt;/option&gt; <br/>
+         &lt;option value="audi"&gt; Audi &lt;/option&gt; <br/>
+         &lt;option value="tata"&gt;TATA &lt;/option&gt; <br/>
+         &lt;/section&gt; <br/>
+         <b>Output:</b><br>
+         <label for="car">Choose a car</label>
+         <select id="car" name="car">
+            <option value="volvo">Volvo</option>
+            <option value="audi">Audi</option>
+            <option value="tata">TATA</option>
+         </select>
+    </li>
+    <li><b>The &lt;option&gt; Elements </b>
+        <p>The otion element define an option that can be selected by default the first item in the drop down list is selected to define a pre selected option.</p>
+        <b>Example:-</b><br/>
+        &lt;select&gt;<br/>
+        &lt;option value="TATA"&gt; TATA  &lt;/option&gt; <br/>
+        &lt;option value="Mahindra"&gt; Mahindra  &lt;/option&gt; <br/>
+        &lt;option value="Jaquar"&gt; Jaquar  &lt;/option&gt; <br/>
+        &lt;/select&gt; </li>
+     <li><b>The &lt;textarea&gt; Element</b><br/>
+    <p>The element defines a multi-line input field (a textarea) </p>
+<b>Example:</b><br/>
+&lt;textarea name="message" placeholder="Type your message..."&gt;<br>
+<b>Output:</b> <input type="textarea" placeholder="Type your message..">
+</li>   
+
+</ol>
+<div class="footer">
+    <a href="unit1.html"><button  id="home"> <i class="fa-solid fa-less-than"></i> </button></a>  
+<a href="Unit3.html"><button id="unit2"><i class="fa-solid fa-greater-than"></i></button></a>
+
+</div>
+
+
+</body>
+</html>

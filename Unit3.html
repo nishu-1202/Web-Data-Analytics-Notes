@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<title> Unit 3 </title>
+<link rel="stylesheet" href="common.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<h1> Unit 3 </h1>
+<h3>What is CSS ?</h3>
+<p>CSS(Cascading Style Sheet) is used to stylesheets are fondly referd to as CSS. The reason for using this is to simplify the process of making web pages presentable.</p>
+<p>It allows you to apply styles on webpage more importantly. it enable you to do this independently.It enable you to do this ,or independently of the HTML that makes up each webpage.</p>
+<h3>History of CSS</h3>
+<p>CSS was intoduced in late 1996 on the recommendation of World Wide Web Consortium(W3C). In the history of CSS, it has seen mainly three updates.</p>
+<h3>Versions of CSS</h3>
+<ol>
+   <li><b>CSS 1</b><br>
+<ul>
+    <li>Provide margin,border,padding and positioning of element.</li>
+    <li>Provide different text attributes such spacing between words,letters and lines of text.  </li>
+    <li>Provide font properties,Such as emphasis.</li>
+    <li>Provide alignment of text,image and other elements.</li>
+    <li>Provide color to text</li>
+    <li>Provide background to element.</li>
+</ul>
+</li>
+<li><b>CSS 2</b><br/>
+<ul>
+    <li>Provide absolute relative and fixed positioning of elements and the z-index.</li>
+    <li>Provide style for different media type such as scren,tv and print.</li>
+    <li>Supports aural stylesheet that are used by visualy impaired person to across the web.</li>
+    <li>Provide font properties such as shadows.</li>
+    <li>Supports the directional text which represents a text that can be displayed in both right to left(RTL) and left to right(LTR) direction.</li>
+</ul>
+</li>
+<li><b>CSS 3</b>
+<ul>
+    <li>Supports more colors and a wider range of color defination,such as RED,GREEN,BLUE,ALFA (RGBA) and Hue Saturation Lightness(HSL). </li>
+    <li>Support the border image through border-image and border-corner properties.</li>
+    <li>Provide roundness corner for any box using border-radius and background position.</li>
+    <li>Provide the box-shadows property to add shadow effect to the element.</li>
+    <li>Allows multiple background on a webpage.</li>
+    <li>Allows multicolumn text without using table. </li>
+    <li>Display shadow with the text.</li>
+    <li>Provide opacity to set the transperancy of box,image or text.</li>
+    <li>Provide CSS Selectors.</li>
+    <li>Support RGBA colours.</li>
+    <li>Provide custom fonts.</li>
+    <li>Provide attribute selectors.</li>
+</ul>
+</li>
+</ol>
+
+<h3>Browser Support</h3>
+<p>CSS browser support is a critical consideration when designing and developing websites or web applications. Different browsers may interpret CSS rules differently or may not support certain CSS features altogether. Here's a general overview of CSS browser support considerations:</p>
+<ol>
+    <li><b>Modern Browsers: </b>Most modern browsers such as Google Chrome, Mozilla Firefox, Safari, and Microsoft Edge have excellent support for the latest CSS features. They usually keep up with the latest standards and updates.</li>
+    <li><b>Vendor Prefixes: </b>Some CSS properties require vendor prefixes to work correctly across different browsers. These prefixes are specific to each browser vendor and are used to implement experimental or non-standard CSS features. However, with the advancement of CSS and browser support, the usage of vendor prefixes has decreased significantly in recent years.</li>
+    <li><b>Internet Explorer (IE):</b> Internet Explorer, especially older versions (e.g., IE11 and below), often have limited support for modern CSS features. However, with the decreasing usage of IE and its discontinuation by Microsoft in favor of Microsoft Edge, developers are increasingly able to rely less on legacy IE support.</li>
+    <li><b>Progressive Enhancement:</b> When dealing with CSS browser support, it's essential to follow the principle of progressive enhancement. This means building your website or web application with a core set of features that work across all browsers and then adding enhancements for browsers that support more advanced features.</li>
+    <li><b>Feature Detection and Polyfills:</b> Feature detection libraries like Modernizr can help you detect browser support for specific CSS features and provide fallbacks or polyfills for unsupported features.</li>
+    <li> <b>Can I Use: </b>"Can I Use" is a popular website (caniuse.com) that provides up-to-date browser support tables for various CSS properties and features. It's a valuable resource for checking the compatibility of specific CSS features across different browsers.</li>
+    <li><b>Testing: </b>Always thoroughly test your website or web application across different browsers and devices to ensure consistent behavior and appearance. Browser testing tools or services can help automate this process to some extent.</li>
+</ol>
+<p>By staying informed about CSS browser support and employing best practices for cross-browser compatibility, you can ensure a smoother and more consistent user experience across various platforms and devices.</p>
+
+
+
+<h3>What's new in CSS 3</h3>
+<p>CSS 3 stands for Cascading Stlesheet Level 3 which is the advanced version of css it is used for structuring style and formating webpage. Several new feature have been added to CSS3 and it's supported by all modern web browser the most important feature of CSS 3 is the spliting of CSS standard into seperate modules that are simple to learn and use.</p>
+
+<h3>Types of CSS</h3>
+<p>A CSS stylesheet with an html document by learning how to link the css code with html document.</p>
+<p>A CSS Stylesheet can be linked to an html document in a variety of ways where each way has it's own advantages and disadvantages.</p>
+<p>The following are three way to apply css style to your html document</p>
+<ul>
+    <li>The Internal Stylesheet</li>
+    <li>The External Stylesheet</li>
+    <li>The Inline Stylesheet</li>
+</ul>
+<h3>The Internal Stylesheet</h3>
+<p>The internal stylesheet is written within the head element of the html document.This style is applied only to the document in which it is defined and not refrenced by any other web document.The syntax of internal stylesheet is written as follows.</p>
+<h4>Syntax :</h4>
+<p>&lt;head&gt;</p>
+<p>&lt;style&gt;</p>
+selector{<br/>
+     properties : value;<br/>
+}
+<p>&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+
+<h3>Advantages of using Internal Stylesheet</h3>
+<p>1. Affects only the page in which they are placed .If you are working and large site and head to text.</p>
+<p>2. Allows you to chnage the style of the same HTML file in which you are working </p>
+<h3>Disadvantages</h3>
+<p>Affects only the page to which they are applied. If you want to use same style in several documents,You need to repeat them for every page.</p>
+<h3>The External Stylesheet</h3>
+<p>The External CSS is used to style multiple html pages with a single stylesheet. External CSS contains a seperate CSS file with <span>.css</span> extention. The CSS file contains style properties added on selectors.Once you have a stylesheet document you can link it with your web page in the following two ways : </p>
+<h4>1. Linking</h4>
+<p>HTML link element has three attribute :- rel,type and href</p>
+&lt; link rel="stylesheet" type="text/css" href="style.css" &gt;
+<h4>2. Importing</h4>
+<p>The <span>@import</span> keyword is used to followed by the Uniform Resource Identifier(URI) stylesheet to which you want to impact the style rule</p>
+&lt;style type="text/css"&gt;<br/>
+@import url("my_stylesheet.css")<br/>
+h1{<br/>
+color: red;<br/>
+}<br/>
+&lt;style&gt;
+<h3>The Inline Stylesheet</h3>
+<p>The inline style properties are written in a single line seperated by semicolon these properties are placed inside the style attribute of the html element,on which want to apply the style</p>
+&lt;p style="background-color:#ccc; color: #fff; border: 2px solid black" &gt;<br/>
+<table>
+    <thead>
+        <caption><h3>CSS vs CSS 3</h3></caption>
+        <tr>
+            <th>S No.</th>
+            <th>CSS</th>
+            <th>CSS 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1.</td>
+            <td>CSS is capable of positioning text and massages </td>
+            <td>On the otherhand CSS 3 is capable of making the webpage more effective and take less time to creat CSS 3 background compatibility with CSS</td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Responsive designing is not supported in CSS</td>
+            <td>CSS 3 is the latest version hence it supported responsive design</td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>CSS cannot be split into modules</td>
+            <td>Where as CSS 3 can be break down into module</td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Using CSS we cannot build 3-D animation and transformation</td>
+            <td>CSS 3 be can perform all kind of animation and transformation amd it support animation and 3-D transformation</td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>CSS is very slow as compared to CSS 3 in CSS we have set of standard color</td>
+            <td>Where CSS 3 is faster than CSS and there is numerous colors</td>
+        </tr>
+    </tbody>
+</table>
+<h3>How to use in HTML Document</h3>
+<p>There are different methods to include the css file to html document. HTML is used to designe the structure of any webpage. CSS is used to inhance the visual presentation of webpage.</p>
+
+<h3>CSS Selectors and it's type</h3>
+<p>A CSS Selector is the most important part of css they are used to select element on a html page. The selected element thus can be style according to the need and demand of the user. CSS Selector are of various name : </p>
+<ul>
+    <li> Element Selector</li>
+    <li> ID Selector</li>
+    <li> Class Selector</li>
+    <li> Universal Selector</li>
+    <li> Group Selector</li>
+    <li> Tag Selector</li>
+    <li> Attribute Selector</li>
+    <li> Sub Selector</li>
+</ul>
+<ol>
+<li><b>Element Selector</b><br/>
+    <p>The element selector select HTML element based on the element name</p>
+<h4>Syntax:</h4>
+Element_name{<br/>
+//CSS properties<br/>
+}
+</li>
+<li><b>ID Selector</b><br/>
+<p>The id selector uses the id attribute of an HTML element to select an specific id .Write a <span>hash(#)</span> charecter followed by the id of the element </p>
+<h4>Syntax :</h4>
+#id{<br/>
+ // CSS property <br/>
+}
+</li>
+<li><b>Class Selector</b><br/>
+<p>The class selector select html elements with a specific class attribute. You declare a CSS class by using a <span>dot(.)</span> followed by the class name </p>
+<h4>Syntax :</h4>
+.class{<br/>
+ //CSS property <br/>
+}
+</li>
+<li><b>Universal Selector</b><br/>
+    <p>The universal selector <span>(*)</span> in css is used to select all the element in a html document. It also includes other element which are inside under another element</p>
+    <h4>Synatx :</h4>
+    *{ <br/>
+      //CSS property <br/>
+    }
+</li>
+<li><b>Group Selector</b><br/>
+<p>The selector is used to style all comma-seperated elements with the same style</p>
+<h4>Syntax :</h4>
+#div,.para,h1{<br/>
+  //CSS property <br/>
+}
+</li>
+</ol>
+
+
+
+<div class="footer">
+    <a href="unit2.html"><button  id="home"> <i class="fa-solid fa-less-than"></i> </button></a>  
+<a href="Unit4.html"><button id="unit4"><i class="fa-solid fa-greater-than"></i></button></a>
+
+</div>
+</body>
+</html>
